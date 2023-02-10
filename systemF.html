@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="systemF.css">
+    <title>Document</title>
+</head>
+<body>
+    
+   <div class="crud">
+
+    <div class="head">
+        
+        <h2>CRUD WITH A(S._B)</h2>
+        <p>PRODUCT MANAGEMENT SYSTEM</p>
+
+    </div>
+
+    <div class="inputs">
+
+    <input type="text" id="title" placeholder="Title">
+    
+    <div class="price">
+
+        <input onkeyup="getTotal()" type="number" id="price" placeholder="Price">
+        <input onkeyup="getTotal()" type="number" id="taxes" placeholder="Taxes">
+        <input onkeyup="getTotal()" type="number" id="ads" placeholder="Ads">
+        <input onkeyup="getTotal()" type="number" id="discount" placeholder="Discount">
+        <small id="total"></small>
+
+    </div>
+
+       <input placeholder="Count" type="number" id="count">
+       <input placeholder="Category" type="text" id="category">
+       <button id="submit">Create</button>
+
+    </div>
+    
+    <div class="outputs">
+        <div class="searchBolck">
+            <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="Search">
+            <div class="btnsearch">
+                <button   onclick="getSearchMood(this.id)" id="searchTitle">Search By Title</button>
+                <button  onclick="getSearchMood(this.id)" id="searchCategory">Search By Category</button>
+            </div>
+        </div>
+    </div>
+    <div id="deleteAll">
+        
+    </div>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+        </tr>
+        <tbody id="tbody" >
+         
+        </tbody>
+    </table>
+
+
+  <script src="system.js"></script>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
